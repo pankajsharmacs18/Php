@@ -1,0 +1,32 @@
+<html>
+<body>
+<head>
+<title>reverse  a  number</title>
+</head>
+<form method="post">
+<h1 ><b> Enter nuber : </b> <input type="number" name="value" />
+<input type="submit" name="submit" />
+</form>
+<?php
+if($_POST)
+{
+	$line=$_POST['value'];
+	for($i=0;$i<=$line;$i++)
+	{
+		echo "</br>";
+		for($j=0;$j<=$line;$j++)
+		{
+			if($i==0 || $j==0 || $i==$line || $j==$line)
+			{
+			echo "X:";
+			}
+			else
+			{
+				echo ":-:";
+			}
+		}
+	}
+}		
+?>
+</body>
+</html>
