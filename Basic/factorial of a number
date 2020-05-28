@@ -1,0 +1,25 @@
+<html>
+<body>
+<head>
+<title>factorial of a  number</title>
+</head>
+<form method="post">
+<h1 ><b> Enter nuber : </b> <input type="number" name="value" />
+<br>
+<input type="submit" name="submit" />
+</form>
+<?php
+if($_POST)
+{
+	$num=$_POST['value'];
+	$fact=1;
+	for($i=1;$i<=$num;$i++)
+	{
+	$fact=$fact*$i;
+	echo "factorial is :  <br>".$fact;
+	}
+	
+}		
+?>
+</body>
+</html>
