@@ -1,0 +1,35 @@
+<html>
+<body>
+<head>
+<title>reverse  a  number</title>
+</head>
+<form method="post">
+<h1 ><b> Enter nuber : </b> <input type="number" name="value" />
+<input type="submit" name="submit" />
+</form>
+<?php
+if($_POST)
+{
+	$num=$_POST['value'];
+	$count=0;
+	for($i=2;$i<$num;$i++)
+	{
+		if($num%$i==0)
+		{
+			$count++;
+			break;
+		}
+	}
+	if($count==0)
+	{
+		echo  " $num is prime ";
+		
+	}
+	else
+	{
+		echo "$num is not prime number";
+	}
+}		
+?>
+</body>
+</html>
