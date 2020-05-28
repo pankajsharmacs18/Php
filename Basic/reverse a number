@@ -1,0 +1,24 @@
+<html>
+<body>
+<head>
+<title>reverse  a  number</title>
+</head>
+<form method="post">
+<h1 ><b> Enter nuber : </b> <input type="number" name="value" />
+<input type="submit" name="submit" />
+</form>
+<?php
+if($_POST)
+{
+	$num=$_POST['value'];
+	$sum=0;
+	while($num>1)
+	{
+		$sum=($sum*10)+$num%10;
+		$num=$num/10;
+	}
+	echo "reverse  of ".$num. "  is :  ".$sum;
+}		
+?>
+</body>
+</html>
