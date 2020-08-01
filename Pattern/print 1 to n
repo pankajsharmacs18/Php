@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>This is code</title>
+
+
+</head>
+<body>
+<h1 align="center">this is me </h1>
+<form method="post">
+Enter a number <input type="number" name="num"></input>
+<input type="submit" name="submit"></input>
+<?php
+if($_POST)
+{
+	$num=$_POST['num'];
+	for($i=1;$i<=$num;$i++)
+	{
+		echo " this $i";
+	}
+}
+else
+{
+	echo "Not working ";
+}
+?>
+</form>
+</body>
+</html>
