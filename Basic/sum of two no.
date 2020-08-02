@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>
+this is one more.
+
+</title>
+
+</head>
+<body>
+<h1 align="cener">This is One More </h1>
+<form method="post">
+<h1>Enter Number</h1><input type="number" name="num" id="num" placeholder="Enter no"></input>
+<h1>Enter 2nd number</h1><input type="number" name="num1" id="num1" placeholder="2nd no" ></input>
+<input type="submit" name="submit" ></input>
+</form>
+
+<?php
+
+if($_POST)
+{
+	$num1=$_POST['num1'];
+	$num=$_POST['num'];
+	$sum=$num + $num1;
+	echo (" sum of entered Nnumver is $sum");
+}
+?>
+</body>
+</html>
