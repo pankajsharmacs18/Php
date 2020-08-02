@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>
+this is one more.
+
+</title>
+
+</head>
+<body>
+<h1 align="cener">This is One More </h1>
+<form method="post">
+<h1>Enter Number</h1><input type="text" name="num" id="num" placeholder="Enter no"></input>
+<input type="submit" name="submit" ></input>
+</form>
+
+<?php
+
+if($_POST)
+{
+	$ch=$_POST['num'];
+	echo "Entered Char is : $ch ";
+	      
+      
+    switch ($ch)  
+    {     
+        case 'a':   
+            echo "Given character is vowel";  
+            break;  
+        case 'e':   
+            echo "Given character is vowel";  
+            break;  
+        case 'i':   
+            echo "Given character is vowel";  
+            break;  
+        case 'o':   
+            echo "Given character is vowel";  
+            break;    
+        case 'u':   
+            echo "Given character is vowel";  
+            break;  
+        case 'A':   
+            echo "Given character is vowel";  
+            break;  
+        case 'E':   
+            echo "Given character is vowel";  
+            break;  
+        case 'I':   
+            echo "Given character is vowel";  
+            break;  
+        case 'O':   
+            echo "Given character is vowel";  
+            break;  
+        case 'U':   
+            echo "Given character is vowel";  
+            break;  
+        default:   
+            echo "Given character is consonant";  
+            break;  
+	}
+ } 
+?> 
+
+</body>
+</html>
