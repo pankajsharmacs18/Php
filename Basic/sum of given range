@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+this is one more.
+
+</title>
+
+</head>
+<body>
+<h1 align="cener">This is One More </h1>
+<form method="post">
+<h1>Enter Number</h1><input type="number" name="num" id="num" placeholder="Enter no"></input>
+<input type="submit" name="submit" ></input>
+</form>
+
+<?php
+
+if($_POST)
+{
+	$sum=0;
+	$num=$_POST['num'];
+	for($i=0;$i<=$num;$i++)
+	{
+		$sum=$sum+$i;
+	}
+	echo (" sum os entered Nnumver is $sum");
+}
+?>
+</body>
+</html>
