@@ -30,8 +30,8 @@
       margin-left: 2%;
 	margin-right: 52%;
   top: 150px;
-  background-color:transplate;
-  height: 800px;
+  background-color:grey;
+  height: 100%;
   width: 700px;
   
 }
@@ -42,7 +42,7 @@
 	margin-left: 52%;
   top: 150px;
   background-color:pink;
-  height: 100px;
+  height: 100%;
   width: 700px;
   
 }
@@ -72,12 +72,13 @@ Are you married       :
   <option value="female">No</option>
   <option value="other">Other</option>
 </select>
-Enter mail id      :  <input type="text" name="mail"></input>
+Enter mail id      :  <input type="text" name="mail"></input><br>
 Enter Phone no     : <input type="text" name="phone"></input><br><br>
+
+Enter Your LinkedProfile: <input type="text" name="link" ></input><br>
 <h2 align="center">Enter your Home Address: </h2>
 <input type="text" name="add" style="height:70; width:600;"> </input><br>
 
-Enter Your LinkedProfile: <input type="text" name="link" ></input><br>
 <h1 align="center">Parent details  :</h1>
 Father Name : <input type="text" name="father" placeholder="Fathers name "></input>
 Mother Name : <input type="text" name="mother" placeholder="mother name "></input><br>
@@ -184,7 +185,7 @@ if($_POST['submit'])
 	$branch=$_POST['branch'];
 	$start=$_POST['start'];
 	$end=$_POST['end'];
-		$thc=$_POST['thc'];
+	$thc=$_POST['thc'];
 
 	$col=$_POST['col'];
 	$col2=$_POST['12th'];
