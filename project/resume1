@@ -1,0 +1,248 @@
+<html>
+<head>
+<title>this is resume !</title>
+
+<style>
+.self
+{
+		position: absolute;
+      margin-left: 1%;
+	margin-right: 52%;
+  margin-top: 0px;
+  background-color:transplate;
+  height: 200px;
+  width: 400px;
+}
+.pre
+{
+		position: absolute;
+      margin-left: 52%;
+	margin-right: 0%;
+  margin-top: 0px;
+  background-color:transplate;
+  height: 200px;
+  width: 300px;
+	
+}
+.html
+{
+		position: absolute;
+      margin-left: 2%;
+	margin-right: 52%;
+  top: 150px;
+  background-color:transplate;
+  height: 800px;
+  width: 700px;
+  
+}
+.php
+{
+		position: absolute;
+      margin-right: 2%;
+	margin-left: 52%;
+  top: 150px;
+  background-color:pink;
+  height: 100px;
+  width: 700px;
+  
+}
+</style>
+</head>
+<body>
+
+<h1 align="center" > This is Your resume </h1>
+<hr>
+<hr>
+<div class="html">
+<form method="post">
+<h3>Enter your full   name :  </h3><input type="name" name="name" placeholder="Full Name" style='display:block;height:40; width:300' ></input>
+<h2 align="center">Objective : </h2><input type="text" name="obj" placeholder="Please Sumerriese yousreslf Here in few Word " style="height:70; width:600;"></input><br>
+<h1 align="center">Fill Peronal information</h1>
+Enter Date of Birth :<input type="date"  name="dob" placeholder="choose"></input>
+choose the Gender      :
+<select name="gen">
+ <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Other</option>
+</select>
+<br><br>
+Are you married       :
+<select name="mar">
+ <option value="male">yes</option>
+  <option value="female">No</option>
+  <option value="other">Other</option>
+</select>
+Enter mail id      :  <input type="text" name="mail"></input>
+Enter Phone no     : <input type="text" name="phone"></input><br><br>
+<h2 align="center">Enter your Home Address: </h2>
+<input type="text" name="add" style="height:70; width:600;"> </input><br>
+
+Enter Your LinkedProfile: <input type="text" name="link" ></input><br>
+<h1 align="center">Parent details  :</h1>
+Father Name : <input type="text" name="father" placeholder="Fathers name "></input>
+Mother Name : <input type="text" name="mother" placeholder="mother name "></input><br>
+Occupation  : <input type="text" name="ocp" placeholder="occuption "></input>
+Highest Educatio  : <input type="text" name="eduf" placeholder="Fathers "></input><br>
+Highest Education  : <input type="text" name="edum" placeholder="mother  "></input>
+nationality Education  : <input type="text" name="nation" placeholder="nationality  "></input>
+
+<h2 align="center" >Enter college Details Carefully</h2> 
+
+
+Enter Current CGPI :<input type="text" name="cgpi1" ></input> 
+
+Enter Present College Name : <input type="text" name="col" placeholder="Enter personal "></input>
+Enter Current CGPI :<input type="text" name="cgpi1" ></input> 
+<br>
+Enter 12th College Name :<input type="text" name="12th" placeholder="Enter 12h name "></input>
+Cuurent CGPI " <input type="text" name="thc" ></input>
+<br>
+Enter College add.<input type="text" name="cadd" ></input> fill Country :<input type="text" name="country" placeholder="country" ></input><br>
+<h2 align="center" >Enter your Course Details </h1>
+Enter your Course Name: <input type="text" name="course" placeholder=" Currently" </input>
+Enter Branch of course <input type="text" name="branch" ></input><br>
+Starting date  : <input type="text" name="start" placeholder=" Currently" </input>
+Complete course <input type="text" name="end" ></input>
+
+<h1 align="center" style="color:blue">Enter your skill</h1>
+<h2 align="center"></h2><input type="text" name="skill" style="height:70; width:600;" placeholder="Enter Proirity Bisaed "> </input><br>
+<h1 align="center" style="color:blue">Enter your Past Experience  </h1>
+<h2 align="center"></h2><input type="text" name="exp" style="height:70; width:600;" placeholder="Please fill carefully : "> </input><br>
+<h1 align="center" style="color:blue"> Project   </h1>
+<h2 align="center"></h2><input type="text" name="pro" style="height:70; width:600;" placeholder="Please fill carefully : "> </input><br>
+<h1 align="center">
+<input type="submit" name="submit" style="height:40; width:100;"></input>
+</h1>
+</form>
+
+</div >
+
+
+<div class="php">
+<h1 align="center" style="color:red";>
+<?php
+
+if($_POST['submit'])
+{    
+	$name=$_POST['name'];
+	echo " -: $name :-";
+}
+?>
+
+<?php
+
+if($_POST['submit'])
+{
+	$obj=$_POST['obj'];
+	echo "<h4>Objective :</h4> $obj";
+}
+?>
+</h1>
+<hr>
+<h3> <u>-: Personal Information :-</u></h3>
+
+<div class="self"> 
+<?php
+if($_POST['submit'])
+{
+	$name=$_POST['name'];
+	$date=$_POST['dob'];
+	$gender=$_POST['gen'];
+	$mar=$_POST['mar'];
+	echo "<h4>Name : $name </h4>";
+	echo "<h4><D.O.B. : $date </h4>";
+	echo "<h4> Gender   :$gender </h4>";
+	echo "<h4> Married satus   :$mar </h4>";
+}
+?>
+</div>
+<div class="pre">
+<?php
+if($_POST['submit'])
+{
+	$father=$_POST['name'];
+	$mother=$_POST['dob'];
+	$ocp=$_POST['ocp'];
+	$edum=$_POST['edum'];
+	$eduf=$_POST['eduf'];
+	$nation=$_POST['nation'];
+	echo "<h4>Father Name : $father </h4>";
+	echo "<h4><occuption : $ocp</h4>";
+	echo "<h4> Mother Highest Edu.   :$edum </h4>";
+	echo "<h4> Father Highest Edu.   :$eduf </h4>";
+	echo "<h4> Nationality : $nation</h4>";
+}
+?>
+
+</div>
+<h3> <u>Education Details : </u></h3>
+
+<?php
+if($_POST['submit'])
+{
+	$digre=$_POST['course'];
+	$branch=$_POST['branch'];
+	$start=$_POST['start'];
+	$end=$_POST['end'];
+		$thc=$_POST['thc'];
+
+	$col=$_POST['col'];
+	$col2=$_POST['12th'];
+	$cgpi1=$_POST['cgpi1'];
+
+	
+	echo "<h2> $col </h2>";
+	echo "<h4> $digre - $cgpi1</h4>";
+	echo "<h4> $branch </h4>";
+	echo "<h5> $start</h3>- -$end</h5>";
+	echo "<h2> $col2 </h2>";
+	echo "<h4> $col2 </h3- - - - $thc</h4>";
+}
+?>
+<h1 style="color="blue"><u>Skill</u></h3>
+<?php
+
+if($_POST['submit'])
+{
+	$skill=$_POST['skill'];
+	echo "$skill";
+}
+?>
+<h2 align="center" >Project and achievment </h2> 
+<?php
+
+if($_POST['submit'])
+{
+$pro=$_POST['pro'];
+echo "$pro";	
+}
+?>
+<h1> <u>Experience</u></h1> 
+<?php
+if($_POST['submit'])
+{
+	$exp=$_POST['exp'];
+	echo "$exp";
+}
+?>
+<h1> Contact Me</h1>
+<?php
+if($_POST['submit'])
+{
+	$add=$_POST['add'];
+	$phone=$_POST['phone'];
+	$mail=$_POST['mail'];
+	$link=$_POST['link'];
+	echo "Phone : $phone";
+	echo "mail  : $mail";
+	echo "linkedln : $link";
+	echo "$add";
+}
+
+
+?>
+</div>
+
+
+</body>
+</html>
