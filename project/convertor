@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Php-Function!</title>
+<style>
+
+.dis
+{
+		position: absolute;
+      margin-left: 1%;
+	margin-right: 68%;
+  margin-top: 20px;
+  background-color:orange;
+  height: 200px;
+  width: 400px;
+}
+.dig
+{
+		position: absolute;
+      margin-left: 32%;
+	margin-right: 36%;
+  margin-top: 20px;
+  background-color:red;
+  height: 200px;
+  width: 400px;
+}
+.temp
+{
+		position: absolute;
+      margin-left: 68%;
+	margin-right: 2%;
+  margin-top: 20px;
+  background-color:white;
+  height: 200px;
+  width: 400px;
+}
+</style>
+</head>
+<body bgcolor="pink">
+<h1 align="center">This is converter : </h1>
+<div class="dis">
+<h3 align="center"> Choose Distance option</h3><br>
+<form method="post">
+<input type="number" name="cm" placeholder="meter to centi-meter"></input>
+<input type="number" name="km" placeholder="km to inches" ></input><br>
+<h1 align="center"><input type="submit" value="convert"> </h1>
+</form>
+<?php
+$cm=$_POST['cm'];
+$km=$_POST['km'];
+if($cm!=0)
+{
+	$cm1=cm*100;
+	echo "CM IS $cm1 <br>";
+	echo "Metere is $cm";
+}
+else if($km!=0)
+{
+	$ich=$km*39370.1;
+	echo "Kilomter is : $km<br>";
+	echo "inches is  $ich ";
+}
+else
+{
+	echo "INvalid input";
+}
+?>
+</div>
+
+
+<div class="dig">
+<h3 align="center"> Choose Digree option</h3><br>
+<form method="post">
+<input type="number" name="dig" placeholder="digree to redian "></input>
+<input type="number" name="red" placeholder="redian to digree" ></input><br>
+<h1 align="center"><input type="submit" value="convert"> </h1>
+</form>
+<?php
+$dig=$_POST['dig'];
+$red=$_POST['red'];
+$pi=pi();
+if($red!=0)
+{
+	$digree=($red*180)/$pi;
+	echo "Redian is : $red <br>";
+	echo "Digree is  $digree";
+}
+else if(dig!=0)
+{
+	$redd=($dig*$pi)/180;
+	echo "Redian is : $redd <br>";
+	echo "Digree is  $digree";
+}
+else
+{
+	echo "Input valid";
+}
+
+?>
+</div>
+
+
+<div class="temp">
+<h3 align="center"> Choose Temprature option</h3><br>
+<form method="post">
+<input type="number" name="cel" placeholder="%c to forenhote "></input>
+<input type="number" name="for" placeholder="forenhote to &c" ></input><br>
+<h1 align="center"><input type="submit" value="convert"> </h1>
+</form>
+<?php
+ $cel=$_POST['cel'];
+ $for=$_POST['for'];
+ if($cel!=0)
+ {
+	 $for1=(($cel*9)/5)+32;
+	 echo "Celcias  Temprature : $cel <br>";
+	 echo "Forenhite Temprature :$for1";
+ }
+ else if($for!=0)
+ {
+	 $cel1=(($for-32)*5)/9;
+	 echo "Celcias  Temprature : $cel1 <br>";
+	 echo "Forenhite Temprature :$for";
+ }
+ else
+ {
+	 echo "Input Right Input";
+ }
+?>
+</div>
+
+
+<?php
+ $cel=$_POST['cel'];
+ $for=$_POST['for'];
+ if($cel!=0)
+ {
+	 $for1=(($cel*9)/5)+32;
+	 echo "Celcias  Temprature : $cel <br>";
+	 echo "Forenhite Temprature :$for1";
+ }
+?>
+
+
+
+</body>
+</html>
