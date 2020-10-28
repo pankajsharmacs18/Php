@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Sum of 1 to N </title>
+</head>
+<body>
+<h1 align="center" >Sum of 1 to N </h1>
+<form method="POST">
+<label>Enter Range of Number </label>
+<input type="number" name="range" size="10" >
+<input type="submit" name="submit" >
+</form>
+<?php
+
+	$range=$_POST['range'];
+	if(isset($range))
+	{
+	$i=1;
+	$s=0;
+	while($i<=$range)
+	{
+		if($i%2==0){
+		$s=$s+$i;
+		}	
+	$i++;
+	}
+	echo "Sum of even no  1 to $range is : $s";
+	}
+
+?>
+</body>
+</html>
