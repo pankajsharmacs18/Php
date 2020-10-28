@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Count Digit in a number </title>
+</head>
+<body>
+<h1 align="center" >Count Digit in a Number</h1>
+<form method="POST">
+<label>Enter Range of Number </label>
+<input type="number" name="range" size="10" >
+<input type="submit" name="submit" >
+</form>
+<?php
+
+	$range=$_POST['range'];
+	if(isset($range))
+	{
+	$i=0;
+	$temp=$range;
+	while($range>0)
+	{    
+		$i++;
+		$range=(int)$range/10;
+		
+	}
+	$i--;
+	echo "Digit in $temp is $i";
+	
+	}
+
+?>
+</body>
+</html>
