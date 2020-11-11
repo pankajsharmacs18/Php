@@ -1,0 +1,29 @@
+<?php
+    //default password is blank  
+   
+ $con=mysqli_connect('localhost','root','');
+ if(!$con)
+ {
+	 echo "Not Connect to server ";
+ }
+ //reg Database name
+ if(!mysqli_select_db($con,'reg'))
+ {
+	 echo "Data 
+	 not Connected ";
+ }
+ $phone=$_POST['phone'];
+ $mail=$_POST['mail'];
+ $pass=$_POST['pass'];
+ // Register is the name of table 
+ $sql="INSERT INTO register(name,mail,phone) VALUES('$phone','$mail','$pass')";
+ if(!mysqli_query($con,$sql))
+ {
+	 echo "Not Inserted ";
+ }
+ else
+ {
+echo "Data Inserted";
+}
+header("refresh:3; url=connect.html")
+?>
