@@ -1,4 +1,4 @@
-# Awesome PHP ![](https://github.com/pankajsharmacs18)
+# Awesome PHP ![Pankaj Sharma](https://github.com/pankajsharmacs18)
 
 A curated list of amazingly awesome PHP libraries, resources and shiny things.
 
